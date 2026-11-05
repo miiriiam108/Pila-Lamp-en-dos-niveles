@@ -21,7 +21,7 @@ El objetivo de esta práctica es el despliegue de una arquitectura web en **dos 
 
 El fichero `Vagrantfile` automatiza la creación, direccionamiento IP y aprovisionamiento de ambos nodos:
 
-```ruby
+
 Vagrant.configure("2") do |config|
   config.vm.box = "debian/bookworm64"
 
@@ -45,8 +45,5 @@ Vagrant.configure("2") do |config|
     
     mysql.vm.provision "shell", path: "provision-mysql.sh"
   end
-end```
+end
 
-##
-
-###
