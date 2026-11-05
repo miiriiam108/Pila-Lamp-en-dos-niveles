@@ -27,15 +27,15 @@ Vagrant.configure("2") do |config|
 
   # 1. MÁQUINA APACHE (Con acceso a Internet y Port Forwarding)
   config.vm.define "MiriamPorrozApache" do |apache|
-    apache.vm.hostname = "MiriamPorroApache"
+    apache.vm.hostname = "MiriamPorrozApache"
     apache.vm.network "private_network", ip: "192.168.56.10"
     apache.vm.network "forwarded_port", guest: 80, host: 8080
     apache.vm.provision "shell", path: "provision-apache.sh"
   end
 
   # 2. MÁQUINA MYSQL (Aislada de Internet)
-  config.vm.define "MiriamPorroMysql" do |mysql|
-    mysql.vm.hostname = "MiriamPorroMysql"
+  config.vm.define "MiriamPorrozMysql" do |mysql|
+    mysql.vm.hostname = "MiriamPorrozMysql"
     mysql.vm.network "private_network", ip: "192.168.56.20"
     
     # Desactivamos la interfaz NAT para bloquear el acceso a Internet
@@ -46,4 +46,7 @@ Vagrant.configure("2") do |config|
     mysql.vm.provision "shell", path: "provision-mysql.sh"
   end
 end
+
+
+###
 
