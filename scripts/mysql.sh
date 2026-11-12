@@ -16,8 +16,11 @@ systemctl restart mariadb
 
 # 4. Creamos la base de datos y el usuario para la app
 mysql <<EOF
-CREATE DATABASE IF NOT EXISTS gestion_usuarios;
+CREATE DATABASE IF NOT EXISTS lamp_db CHARSET utf8mb4;
 CREATE USER IF NOT EXISTS 'appuser'@'192.168.10.10' IDENTIFIED BY 'appuser123';
-GRANT ALL PRIVILEGES ON gestion_usuarios.* TO 'appuser'@'192.168.10.10';
+GRANT ALL PRIVILEGES ON lamp_db.* TO 'appuser'@'192.168.10.10';
 FLUSH PRIVILEGES;
 EOF
+
+# 5. Creamos la tabla de usuarios con el script de la app
+mysql lamp_db < /vagrant/app/db/database.sql
