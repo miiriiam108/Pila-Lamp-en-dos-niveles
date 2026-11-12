@@ -32,3 +32,18 @@ Antes de encender nada, he comprobado que el Vagrantfile estaba bien escrito con
 Para entrar ejecuto el comando: `vagrant ssh apache`. He comprobado el nombre con `hostname` y el estado con `systemctl status apache2`
 
   ![Captura 5](img/Captura%20de%20pantalla%202026-11-12%20092135.png)
+
+
+  ### 6. Entramos en Mysql
+
+
+  ![Captura 6](img/Captura%20de%20pantalla%202026-11-12%20102309.png)
+
+
+  ### 7. Conexiones a internet
+
+Como podemos observar la maquina apache si tiene internet y la de mysql no, esto es porque sólo la máquina apache está conectada a NAT
+
+  ![Captura 7](img/Captura%20de%20pantalla%202026-11-12%20093334.png)
+  ![Captura 8](img/Captura%20de%20pantalla%202026-11-12%20102654.png)
+
