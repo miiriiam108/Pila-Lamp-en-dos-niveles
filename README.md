@@ -213,7 +213,7 @@ Solo la máquina Apache está conectada a Internet por NAT. Se nota haciendo
 
 **Apache (con Internet):**
 
-![Captura 7](img/Captura%20de%20pantalla%202026-11-13%20093334.png)
+![Captura 7](img/Captura%20de%20pantalla%202026-11-13%20193808.png)
 
 **MySQL (sin Internet):**
 
