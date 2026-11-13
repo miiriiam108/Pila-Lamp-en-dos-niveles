@@ -227,7 +227,7 @@ Así que la máquina de la base de datos está aislada de Internet, pero
 Apache puede hablar con ella, que es justo lo que necesitamos para los
 dos niveles.
 
-![Captura ping](img/Captura%20de%20pantalla%202026-11-12%20193006.png)
+![Captura ping](img/Captura%20de%20pantalla%202026-11-13%20193006.png)
 
 ## 7. La aplicación
 
