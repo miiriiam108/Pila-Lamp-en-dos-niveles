@@ -219,6 +219,15 @@ Solo la máquina Apache está conectada a Internet por NAT. Se nota haciendo
 
 ![Captura 8](img/Captura%20de%20pantalla%202026-11-12%20102654.png)
 
+### 6.1 Conexión entre  máquinas
+Aunque MySQL no tiene Internet, sí está conectada con Apache por la red
+interna. Desde `MiriamPorroApache` hice un `ping` a la IP de MySQL
+(`192.168.10.11`) y responde.
+Así que la máquina de la base de datos está aislada de Internet, pero
+Apache puede hablar con ella, que es justo lo que necesitamos para los
+dos niveles.
+
+![Captura ping](img/Captura%20de%20pantalla%202026-11-12%20193006.png)
 
 ## 7. La aplicación
 
@@ -266,4 +275,7 @@ hablan bien por la red interna.
 
  ## 8. Screencast
 
+En este vídeo se ve la aplicación funcionando: arranco las máquinas, abro la
+web, añado un usuario, lo edito y lo borro.
 
+[Ver screencast](screencast/screencast.mp4)
